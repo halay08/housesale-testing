@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-orange: #f26a25;
+    --color-white: #ffffff;
+    --color-blue: #21a3f3;
+    --color-black: #000000;
+}
+
+.text-orange {
+    color: var(--color-orange);
+}
+.text-blue {
+    color: var(--color-blue);
+}
+body {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+.sec-city {
+    border-top: 2px solid var(--color-orange);
+    border-bottom: 2px solid var(--color-orange);
+}
+.city-item {
+    border: 1px solid var(--color-white);
+    border-radius: 4rem;
+    box-shadow: 0 0 1px 0 #fff inset, 0 0 1px 0 #fff;
+}
+
+@media (min-width: 576px) {
+    .city-list {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .city-list {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .city-list {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .city-list {
+        max-width: 1140px;
+    }
+}
